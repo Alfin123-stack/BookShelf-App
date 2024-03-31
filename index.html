@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Todo App for The Book">
+    <link rel="shortcut icon" href="assets/faviconbook.png" type="image/x-icon">
+    <title>BookShelf App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="judul_app">
+      <h1>BookShelf Application</h1>
+    </header>
+
+    <main>
+      <section class="form-input">
+        <form id="form" action="#">
+          <div class="input-judul-buku">
+            <label for="judul">Judul</label>
+            <input
+              type="text"
+              id="judul"
+              required
+              placeholder="Masukkan Nama Buku"
+            />
+          </div>
+          <div class="input-penulis-buku">
+            <label for="penulis">Penulis</label>
+            <input
+              type="text"
+              id="penulis"
+              required
+              placeholder="Masukkan Penulis Buku"
+            />
+          </div>
+          <div class="input-tahun-buku">
+            <label for="tahun">Tahun</label>
+            <input
+              type="number"
+              id="tahun"
+              required
+              placeholder="Masukkan Tahun Buku"
+            />
+          </div>
+
+          <div class="input-selesai-buku">
+            <label for="selesai">Selesai Dibaca</label>
+            <input type="checkbox" id="selesai"/>
+          </div>
+
+          <button id="submit-button" type="submit" name="Submit">ADD Book</button>
+        </form>
+      </section>
+
+      <section class="search-book">
+        <h2>Search Book</h2>
+
+        <form action="">
+          <div class="form-search">
+            <label for="search"></label>
+            <input type="text" id="search-input" placeholder="Search" />
+            <button type="button" id="search-btn">Search</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="bookshelf">
+        <h2>Belum Selesai Dibaca</h2>
+
+        <div class="list-buku" id="buku-belum-dibaca">
+            
+        </div>
+      </section>
+
+      <section class="bookshelf">
+        <h2>Selesai Dibaca</h2>
+
+        <div class="list-buku" id="buku-sudah-dibaca">
+        </div>
+      </section>
+
+
+
+      <!--pop up hapus-->
+
+      <section id="hapus-popup" class="pop-upCard" hidden>
+        <div class="body-popup">
+          <i class="fa-solid fa-circle-xmark" style="color: #c8ae7d;"></i>
+          <h2>Deleted</h2>
+          <p>Apakah kamu yakin ingin menghapus ini?</p>
+          <button id="yakin-btn">Yakin</button>
+          <button id="tutup-btn">Tutup</button>
+        </div>
+      </section>
+
+      <!--pop up succes-->
+
+      <section id="success-popup" class="pop-upCard" hidden>
+        <div class="body-popup">
+          <i class="fa-solid fa-circle-check" style="color: #c8ae7d;"></i>
+          <h2>Success</h2>
+          <p>Kamu berhasil Menghapusnya :)</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/8b4e18be7d.js" crossorigin="anonymous"></script>
+
+    <!--javascipt-->
+    <script src ="script.js"></script>
+
+  </body>
+</html>

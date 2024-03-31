@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 10000px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(33, 37, 41);
+    color: #C8AE7D;
+    
+}
+
+
+.judul_app h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main{
+    margin-top: 4rem;
+}
+
+main .form-input{
+    margin : auto;
+    width: 600px;
+    margin-bottom: 5rem;
+}
+
+main .form-input label{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+main .form-input input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #C8AE7D;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+main .form-input input:focus{
+    outline: #C8AE7D;
+}
+
+main .form-input .input-judul-buku ,
+main .form-input .input-penulis-buku,
+main .form-input .input-tahun-buku,
+main .form-input .input-selesai-buku {
+    margin-top: 1.3rem;
+}
+
+main .form-input .input-selesai-buku label {
+    display: inline;
+}
+
+main .form-input .input-selesai-buku input {
+    width: 16px;
+    height: 16px;
+    margin-left: 2rem;
+}
+
+main .form-input button{
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #C8AE7D;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+main .form-input button:hover{
+
+    background-color: #e5c993;
+}
+
+main .search-book{
+    margin : auto;
+    width: 600px;
+}
+
+main .search-book h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+main .form-search {
+    margin-top: 1rem;
+    display: flex;
+    gap: .5rem;
+}
+
+
+main .search-book .form-search input{
+    width: 80%;
+    height: 0px;
+    border: 2px solid #C8AE7D;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+main .search-book .form-search button{
+    width: 20%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #C8AE7D;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+main .search-book .form-search button:hover{
+    background-color: #e5c993;
+}
+
+main .bookshelf{
+    width: 600px;
+    margin: auto;
+    min-height: 200px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+    padding: 20px;
+}
+
+
+main .bookshelf .list-buku{
+    padding: 20px;
+    margin-top: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+    border-radius: 5px;
+}
+
+main .bookshelf h2{
+
+    font-size: 2rem;
+}
+
+main .bookshelf .list-buku h2{
+    font-size: 1.7rem;
+}
+
+main .bookshelf .list-buku p{
+    margin-top: .5rem;
+}
+
+main .bookshelf .list-buku .pembungkus{
+    margin-bottom: 1.5rem;
+}
+
+.sudah-btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+
+    background: url('assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.sudah-btn:hover {
+    background: url('assets/check-solid.svg');
+    background-size: contain;
+}
+
+.hapus-btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+
+    background: url('assets/trash-outline.svg');
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.hapus-btn:hover {
+    background: url('assets/trash-fill.svg');
+    background-size: cover;
+}
+
+.belum-btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+
+    background: url('assets/undo-ouline.svg');
+    background-size: cover;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.belum-btn:hover {
+    background: url('assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.sudah-btn:focus, .hapus-btn {
+    outline: none;
+}
+
+.pop-upCard{
+    background: rgb(33, 37, 41,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.pop-upCard .body-popup{
+    max-width: 380px;
+    min-height: 100px;
+    background-color: rgb(33, 37, 41);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.pop-upCard .body-popup i{
+    font-size: 4rem;
+    
+}
+
+.pop-upCard .body-popup h2{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    
+}
+
+.pop-upCard .body-popup button{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: #C8AE7D;
+    color: white;
+
+
+    font-family: 'Quicksand', sans-serif;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-upCard .body-popup button:hover{
+    background-color: #e5c993;
+}
+
+
+
+
+
+
